@@ -91,3 +91,4 @@ def comment_delete(request,pk):
     post_pk = comment.post.pk
     comment.delete()
     return redirect('post_detail',pk=post_pk)
+
