@@ -12,3 +12,7 @@ class PostListView(ListView):
 
     def get_queryset():
         return Post.objects.filter(published_date__lte=timezone.now().order_by('-published_date')
+
+
+
+#this is to see whether git push worked or not 
