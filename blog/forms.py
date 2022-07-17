@@ -15,10 +15,10 @@ class PostForm(forms.ModelForm):
 
 
 
-class Comment(forms.ModelForm):
+class CommentForm(forms.ModelForm):
 
     class Meta():
-        model=comments
+        model=Comment
         fields=('author','text')
 
         widgets={
